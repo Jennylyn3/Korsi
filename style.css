@@ -10,7 +10,6 @@ body {
 
 a {
     text-decoration: none;
-    color: #835f5f;
 }
 button {
     height: 45px;
@@ -79,7 +78,6 @@ button {
 .option {
     display: flex;
     flex-direction: column;
-    /* position: absolute; */
 }
 .slider-control button{
     border: 1px solid #f4f5f7  ;
@@ -99,15 +97,23 @@ button {
     background: #ffffff;
     color: #000000;
     border: 1px solid #000000;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 
+                0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
+
 .product-button {
     display: table;
     margin: 0 auto;
 }
+.products p {
+    font-weight: 600;
+}
 
 
 
-
+.collection-title h2 {
+    font-size: 36px;
+}
 .collection-button a .orange-btn {
     background: #ffb661;
     color: #ffffff;
@@ -118,20 +124,16 @@ button {
     color: #aba7a8;
     border: 1px solid #aba7a8;
 }
-.collection-button a button {
+.collection-button a .center-btn {
     background: #ffffff;
     color: #000000;
     border: 1px solid #000000;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 
+                0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
-.collection-button {
+.collection-button .center-btn {
     display: table;
     margin: 0 auto;
-}
-
-
-
-.product {
-    border: 2px dashed #36335c;
 }
 .prod-img {
     width: 350px;
@@ -141,35 +143,38 @@ button {
 
 
 .services-section {
-    padding: 20px 0 ;
-    border: 2px dashed #36335c;
-    /* transform: translateY('250px'); */
-}
-.cards {
-    /* top: 0; */
-}
-
-.index2 {
-    z-index: 2;
+    /* border: 2px dashed #36335c; */
+    padding-bottom: 600px;
 }
 .bg-blue {
     background-color: #152445;
     width: 1200px;
     height: 470px;
-     /* position: relative;  */
-     /* z-index: 1; */
-    /* right: -50px; */
-    /* top: 0; */
+    position: absolute;
+    top: 0;
+    left: -60px;
 } 
+.customs {
+    position: absolute;
+    top: 90px;
+}
 .description {
     font-size: 12px;
     line-height: 1.5rem;
     letter-spacing: .01rem;
+    color: #000000;
 }
-h2 {
+.font-color-white-12 {
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 1.5rem;
+    letter-spacing: .01rem;
+}
+h3 {
     width: 150%;
     line-height: 2rem;
-    letter-spacing: .01rem;
+    letter-spacing: .1rem;
+    font-size: 25px;
 }
 .absolute {
     position: absolute;
@@ -185,9 +190,12 @@ h2 {
     text-align: center;
 }
 .border-box {
-    border: 1px solid #000000;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 
+                0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
     width: 350px;
     height: 315px;
+    
 }
 .size-color {
     color: #1d8179;
@@ -201,7 +209,7 @@ h5 {
 
 .newsletter {
     padding: 50px 0 ;
-    border: 2px dashed #1d7240;
+    /* border: 2px dashed #1d7240; */
 }
 .h3-blue {
     color: #162546;
@@ -213,8 +221,8 @@ label {
     font-size: 14px;
 }
 input {
-    height: 40px;
-    width: 260px;
+    height: 45px;
+    width: 300px;
     outline-color: rgba(0,0,0,0);
     color: #000000;
     font-size: 16px;
@@ -227,14 +235,14 @@ input {
     background: #ffb661;
     color: #ffffff;
     border: 1px solid #ffb661;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 
+                0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    margin: 25px 0;
 }
 
 
 
 /* FOOTER */
-footer {
-    /* margin: 0 auto; */
-}
 .footer {
     display: flex;
 }
@@ -259,6 +267,6 @@ footer {
 .py-10 {
     padding: 10px 0;
 }
-.py-20 {
-    padding: 20px 0;
+.py-50 {
+    padding: 50px 0;
 }
